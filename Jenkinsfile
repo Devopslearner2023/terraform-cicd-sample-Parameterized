@@ -6,8 +6,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'TF_VAR_environment', choices: ['dev', 'test', 'uat', 'prod'], description: 'Select Environment')
-        choice(name: 'TERRAFORM_OPERATION', choices: ['plan', 'apply', 'destroy'], description: 'Select Terraform Operation')
+        choice(name: 'TF_VAR_environment', choices: ['dev', 'uat', 'prod'], description: 'Select Environment')
     }
 
     environment {
